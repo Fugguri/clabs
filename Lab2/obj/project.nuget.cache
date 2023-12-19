@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "51/bNsIS374ypd73YGOLXr27P0QXGXPYFPmRpK/mf3WY3chs5BmW5GNX6NlGOjEHT1QzIe7GLpnyX46Y92/Rtg==",
+  "dgSpecHash": "zSGP7or6UcHJJHOw0oJu6daN9R59QQUztkNk0TB1I/osb9WdTdcK0RI8v/T+X1VxNYcgSdBkTngoHj++P7zn9g==",
   "success": true,
   "projectFilePath": "/home/fugguri/Документы/C#Labs/Lab2/lab2.csproj",
-  "expectedPackageFiles": [
-    "/home/fugguri/.nuget/packages/microsoft.netcore.app.ref/7.0.14/microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
-    "/home/fugguri/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.14/microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
-    "/home/fugguri/.nuget/packages/microsoft.netcore.app.host.linux-x64/7.0.14/microsoft.netcore.app.host.linux-x64.7.0.14.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

@@ -3,7 +3,6 @@ using System;
 namespace Lab2
 {
 
-    [Serializable]
     public class Task
     {
         public string Title { get; set; }

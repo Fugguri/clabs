@@ -1,0 +1,29 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Lab5.Models"
+        x:Class="Lab5.MainWindow"
+        Title="Lab5"
+        Width="600"
+        Height="400">
+    <StackPanel x:DataType="local:Task">
+        <!-- Список задач -->
+        <ListBox Name="taskListBox"
+                 Margin="10"
+                 VerticalAlignment="Stretch"
+                 DoubleTapped="TaskListBox_DoubleTapped"
+                 PointerPressed="TaskListBox_PointerPressed">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate x:DataType="local:Task">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Title}" VerticalAlignment="Center" Margin="5"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </StackPanel>
+</Window>

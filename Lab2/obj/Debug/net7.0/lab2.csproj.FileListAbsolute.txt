@@ -18,7 +18,6 @@
 /home/fugguri/Документы/C#Labs/lab2/bin/Debug/net7.0/lab2.runtimeconfig.json
 /home/fugguri/Документы/C#Labs/lab2/bin/Debug/net7.0/lab2.dll
 /home/fugguri/Документы/C#Labs/lab2/bin/Debug/net7.0/lab2.pdb
-/home/fugguri/Документы/C#Labs/lab2/obj/Debug/net7.0/lab2.csproj.AssemblyReference.cache
 /home/fugguri/Документы/C#Labs/lab2/obj/Debug/net7.0/lab2.GeneratedMSBuildEditorConfig.editorconfig
 /home/fugguri/Документы/C#Labs/lab2/obj/Debug/net7.0/lab2.AssemblyInfoInputs.cache
 /home/fugguri/Документы/C#Labs/lab2/obj/Debug/net7.0/lab2.AssemblyInfo.cs
@@ -28,3 +27,4 @@
 /home/fugguri/Документы/C#Labs/lab2/obj/Debug/net7.0/lab2.pdb
 /home/fugguri/Документы/C#Labs/lab2/obj/Debug/net7.0/lab2.genruntimeconfig.cache
 /home/fugguri/Документы/C#Labs/lab2/obj/Debug/net7.0/ref/lab2.dll
+/home/fugguri/Документы/C#Labs/Lab2/obj/Debug/net7.0/lab2.sourcelink.json

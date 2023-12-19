@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PMsTXMFEXCgKCoRpmkaXPeVTscz17xSUBWmrG+GhzuK7riTGbnADz2mXMqi0ZGALeB/FZFCopC1prm9CkKTlEg==",
+  "dgSpecHash": "+oNw3EU39J2Co7/cVcoUIvgWC43zSBvR8VmedqcRD0gB0JYxJ4pUcQ8KPxZW3HP/XvclHsqgWUIAcA19/K/LDg==",
   "success": true,
   "projectFilePath": "/home/fugguri/Документы/C#Labs/Lab3/Lab3.csproj",
   "expectedPackageFiles": [
@@ -27,10 +27,7 @@
     "/home/fugguri/.nuget/packages/system.security.cryptography.protecteddata/4.7.0/system.security.cryptography.protecteddata.4.7.0.nupkg.sha512",
     "/home/fugguri/.nuget/packages/system.security.permissions/4.7.0/system.security.permissions.4.7.0.nupkg.sha512",
     "/home/fugguri/.nuget/packages/system.security.principal.windows/4.7.0/system.security.principal.windows.4.7.0.nupkg.sha512",
-    "/home/fugguri/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512",
-    "/home/fugguri/.nuget/packages/microsoft.netcore.app.ref/7.0.14/microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
-    "/home/fugguri/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.14/microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
-    "/home/fugguri/.nuget/packages/microsoft.netcore.app.host.linux-x64/7.0.14/microsoft.netcore.app.host.linux-x64.7.0.14.nupkg.sha512"
+    "/home/fugguri/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }
