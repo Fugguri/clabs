@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Task>
+    <Title>sa</Title>
+    <Description>sa</Description>
+    <Deadline>2012-12-12T00:00:00</Deadline>
+    <Tags>
+      <string>sada</string>
+      <string>das</string>
+    </Tags>
+  </Task>
+</ArrayOfTask>
