@@ -16,7 +16,7 @@ namespace Lab5
 {
     public partial class MainWindow : Window
     {
-        static ListBox taskBox;
+        public static ListBox taskBox;
 
         private static JsonObjectSerializer<Task> jsonSerializer = new JsonObjectSerializer<Task>();
 
@@ -89,7 +89,7 @@ namespace Lab5
 
         }
 
-        private void UpdateTaskListBox(List<Task> tasks)
+        internal static void UpdateTaskListBox(List<Task> tasks)
         {
             // Очистите ListBox и добавьте обновленные задачи
             taskBox.Items.Clear();

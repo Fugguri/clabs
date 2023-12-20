@@ -48,7 +48,7 @@ namespace Lab5
             List<Task> tasks = jsonSerializer.ReadDataFromFile("tasks.json");
             tasks.Add(newTask);
             jsonSerializer.WriteDataToFile(tasks, "tasks.json");
-            // // Закроем окно после добавления задачи
+            MainWindow.UpdateTaskListBox(tasks);
 
             Close();
 

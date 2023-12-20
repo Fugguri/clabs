@@ -3,6 +3,7 @@ using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using Avalonia.Interactivity;
 using Lab5.Models;
+using Lab5;
 using Lab5.Serializers;
 using System.Linq;
 using System;
@@ -68,6 +69,8 @@ namespace Lab5
 
             tasks.Add(editedTask);
             jsonSerializer.WriteDataToFile(tasks, "tasks.json");
+            MainWindow.UpdateTaskListBox(tasks);
+
 
             Close(); // Закрытие окна редактирования
         }
