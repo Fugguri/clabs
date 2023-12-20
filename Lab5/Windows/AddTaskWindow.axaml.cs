@@ -1,4 +1,3 @@
-// AddTaskWindow.axaml.cs
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
@@ -32,19 +31,14 @@ namespace Lab5
 
         private void AddTask_Click(object sender, RoutedEventArgs e)
         {
-            // Обработчик кнопки "Add Task"
             string title = addTitleTextBox.Text;
             DateTime selectedDate = addDeadlinePicker.SelectedDate.Value.DateTime;
-            // DateTime dateTime = selectedDate?.LocalDateTime ?? DateTime.Now;
             string description = addDescriptionTextBox.Text;
 
             string tags = string.Join(" ", addTitleTextBox.Text);
 
-
-            // Создайте новую задачу
             Task newTask = new Task { Title = title, Description = description, Deadline = selectedDate, Tags = tags };
 
-            // Добавьте новую задачу в список задач
             List<Task> tasks = jsonSerializer.ReadDataFromFile("tasks.json");
             tasks.Add(newTask);
             jsonSerializer.WriteDataToFile(tasks, "tasks.json");

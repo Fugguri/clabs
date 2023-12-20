@@ -47,11 +47,9 @@ namespace Lab5
         {
             if (taskBox.SelectedItem is Task selectedTask)
             {
-                // Создайте окно для редактирования задачи и передайте в него выбранную задачу
                 var editTaskWindow = new EditTaskWindow(selectedTask);
                 editTaskWindow.ShowDialog(this);
 
-                // После закрытия окна обновите список задач, если были изменения
                 List<Task> tasks = jsonSerializer.ReadDataFromFile("tasks.json");
                 UpdateTaskListBox(tasks);
             }
@@ -62,11 +60,8 @@ namespace Lab5
             var addTaskWindow = new AddTaskWindow();
             addTaskWindow.ShowDialog(this);
 
-            // После закрытия окна обновите список задач, если были изменения
             List<Task> tasks = jsonSerializer.ReadDataFromFile("tasks.json");
             UpdateTaskListBox(tasks);
-            // addTaskWindow.Close();
-
         }
 
 
@@ -91,7 +86,6 @@ namespace Lab5
 
         internal static void UpdateTaskListBox(List<Task> tasks)
         {
-            // Очистите ListBox и добавьте обновленные задачи
             taskBox.Items.Clear();
             foreach (Task task in tasks)
             {
@@ -105,10 +99,7 @@ namespace Lab5
             {
                 ShowTaskDetails(selectedTask);
             }
-            else
-            {
-                // Обработка ситуации, когда нет выбранного элемента
-            }
+
         }
         private void ShowTaskDetails(Task task)
         {
