@@ -16,7 +16,7 @@
         <TextBox Name="editDescriptionTextBox" Text="{Binding Description}" Margin="0,0,0,10"/>
 
         <TextBlock Text="Deadline:" FontWeight="Bold"/>
-<DatePicker Name="editDeadlinePicker" SelectedDate="{Binding Deadline}" Margin="0,0,0,10"/>
+<DatePicker Name="editDeadlinePicker"  Margin="0,0,0,10"/>
 
         <TextBlock Text="Tags:" FontWeight="Bold"/>
         <TextBox Name="editTagsTextBox" Text="{Binding Tags}" Margin="0,0,0,10"/>

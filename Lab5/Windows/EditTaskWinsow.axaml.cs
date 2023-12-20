@@ -35,7 +35,7 @@ namespace Lab5
             // Установите дату в editDeadlinePicker
             if (task.Deadline != null)
             {
-                editDeadlinePicker.SelectedDate = new DateTimeOffset(task.Deadline);
+                editDeadlinePicker.SelectedDate = task.Deadline;
             }
             // editTagsTextBox.Text = task.Tags;
         }
