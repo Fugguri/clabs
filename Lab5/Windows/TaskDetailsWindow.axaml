@@ -1,0 +1,29 @@
+<!-- TaskDetailsWindow.axaml -->
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Lab5.Models"
+        x:Class="Lab5.TaskDetailsWindow"
+        Title="Task Details"
+        Width="400"
+        Height="300"
+        x:DataType="local:Task">
+
+    <StackPanel Margin="10">
+        <TextBlock Text="Title:" FontWeight="Bold"/>
+        <TextBlock Text="{Binding Title}" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Description:" FontWeight="Bold"/>
+        <TextBlock Text="{Binding Description}" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Deadline:" FontWeight="Bold"/>
+        <TextBlock Text="{Binding Deadline}" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Tags:" FontWeight="Bold"/>
+        <TextBlock Text="{Binding Tags}" Margin="0,0,0,5"/>
+        
+
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+           <Button Content="Ok" Click="TaskInfo_Click" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

@@ -1,0 +1,25 @@
+<!-- AddTaskWindow.axaml -->
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Lab5.Models"
+        x:Class="Lab5.AddTaskWindow" 
+        Title="Add Task"
+        Width="400"
+        Height="300">
+
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Title:"/>
+            <TextBox Name="addTitleTextBox" />
+            <TextBlock Text="Description:"/>
+            <TextBox Name="addDescriptionTextBox" />
+            <TextBlock Text="Deadline:"/>
+            <DatePicker Name="addDeadlinePicker"/>
+            <TextBlock Text="Tags(separated by whitespace):"/>
+            <TextBox Name="addTagsTextBox" />
+
+            <Button Content="Ok" Click="AddTask_Click" HorizontalAlignment="Left"/>
+            <Button Content="Cancel" Click="Cancel_Click" HorizontalAlignment="Right"/>
+        </StackPanel>
+    </Grid>
+</Window>

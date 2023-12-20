@@ -20,5 +20,14 @@ build_property.EnableGeneratedComInterfaceComImportInterop =
 [/home/fugguri/Документы/C\#Labs/Lab5/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/fugguri/Документы/C\#Labs/Lab5/MainWindow.axaml]
+[/home/fugguri/Документы/C\#Labs/Lab5/Windows/AddTaskWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/fugguri/Документы/C\#Labs/Lab5/Windows/EditTaskWinsow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/fugguri/Документы/C\#Labs/Lab5/Windows/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/fugguri/Документы/C\#Labs/Lab5/Windows/TaskDetailsWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

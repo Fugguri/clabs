@@ -291,3 +291,4 @@
 /home/fugguri/Документы/C#Labs/Lab4/bin/Debug/net8.0/runtimes/win-x86/native/SQLite.Interop.dll
 /home/fugguri/Документы/C#Labs/Lab4/bin/Debug/net8.0/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
 /home/fugguri/Документы/C#Labs/Lab4/bin/Debug/net8.0/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/home/fugguri/Документы/C#Labs/Lab4/obj/Debug/net8.0/Lab4.sourcelink.json

@@ -20,7 +20,10 @@
           "net8.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/avalonia-ci/api/v3/index.json": {},
+          "https://www.nuget.org/api/v2/package/Avalonia.Dialogs/4.11.0": {},
+          "https://www.nuget.org/api/v2/package/Avalonia.FuncUI.New/0.9.0-alpha-1339": {}
         },
         "frameworks": {
           "net8.0": {

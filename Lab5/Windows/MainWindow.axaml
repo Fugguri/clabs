@@ -1,0 +1,44 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Lab5.Models"
+        x:Class="Lab5.MainWindow"
+        Title="Lab5"
+        Width="1200"
+        Height="900">
+
+    <Window.Resources>
+        <!-- ContextMenu definition -->
+        <ContextMenu x:Key="ItemContextMenu">
+            <MenuItem Header="Add task" Click="AddTaskMenuItem_Click"/>
+            <MenuItem Header="Edit" Click="EditMenuItem_Click"/>
+            <MenuItem Header="Delete" Click="DeleteMenuItem_Click"/>
+        </ContextMenu>
+    </Window.Resources>
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <ListBox Name="taskListBox"
+                 Margin="10"
+                 ScrollViewer.VerticalScrollBarVisibility="Auto"
+                 VerticalAlignment="Stretch">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            
+            <ListBox.ItemTemplate>
+                <DataTemplate x:DataType="local:Task">
+                    <ListBoxItem ContextMenu="{StaticResource ItemContextMenu}">
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="i" Click="TaskInfo_Click" Margin="5"/>
+                            <TextBlock Text="Title:" FontWeight="Bold" Margin="5"/>
+                            <TextBlock Text="{Binding Title}" VerticalAlignment="Center" Margin="5"/>
+                            <TextBlock Text="Deadline:" FontWeight="Bold" Margin="5"/>
+                            <TextBlock Text="{Binding Deadline}" VerticalAlignment="Center" Margin="5"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </ScrollViewer>
+</Window>
