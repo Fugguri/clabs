@@ -3,23 +3,24 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:Lab5.Models"
         x:Class="Lab5.EditTaskWindow"
-        Title="Task Details"
+        Title="Edit Task "
         Width="400"
         Height="300"
         x:DataType="local:Task">
 
     <StackPanel Margin="10">
         <TextBlock Text="Title:" FontWeight="Bold"/>
-        <TextBox Name="editTitleTextBox" Text="{Binding Title, Mode=TwoWay}" Margin="0,0,0,10"/>
+        <TextBox Name="editTitleTextBox" Text="{Binding Title}" Margin="0,0,0,10"/>
 
         <TextBlock Text="Description:" FontWeight="Bold"/>
-        <TextBox Name="editDescriptionTextBox" Text="{Binding Description, Mode=TwoWay}" Margin="0,0,0,10"/>
+        <TextBox Name="editDescriptionTextBox" Text="{Binding Description}" Margin="0,0,0,10"/>
 
         <TextBlock Text="Deadline:" FontWeight="Bold"/>
-        <DatePicker Name="editDeadlinePicker" SelectedDate="{Binding Deadline, Mode=TwoWay}" Margin="0,0,0,10"/>
+<DatePicker Name="editDeadlinePicker" SelectedDate="{Binding Deadline}" Margin="0,0,0,10"/>
 
         <TextBlock Text="Tags:" FontWeight="Bold"/>
-        <TextBox Name="editTagsTextBox" Text="{Binding Tags, Mode=TwoWay}" Margin="0,0,0,10"/>
+        <TextBox Name="editTagsTextBox" Text="{Binding Tags}" Margin="0,0,0,10"/>
+
 
         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
            <Button Content="Ok" Click="SaveEditedTask_Click" HorizontalAlignment="Center"/>

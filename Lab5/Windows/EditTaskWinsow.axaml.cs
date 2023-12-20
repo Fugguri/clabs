@@ -14,6 +14,8 @@ namespace Lab5
 {
     public partial class EditTaskWindow : Window
     {
+        private static JsonObjectSerializer<Task> jsonSerializer = new JsonObjectSerializer<Task>();
+
         public EditTaskWindow(Task task)
         {
             InitializeComponent(task);
@@ -29,9 +31,11 @@ namespace Lab5
             editDeadlinePicker = this.FindControl<DatePicker>("editDeadlinePicker");
             editTagsTextBox = this.FindControl<TextBox>("editTagsTextBox");
 
-            // // Установите дату в editDeadlinePicker
-            editDeadlinePicker.SelectedDate = new DateTimeOffset(task.Deadline); // Используйте конструктор DateTimeOffset
-
+            // Установите дату в editDeadlinePicker
+            if (task.Deadline != null)
+            {
+                editDeadlinePicker.SelectedDate = new DateTimeOffset(task.Deadline);
+            }
             // editTagsTextBox.Text = task.Tags;
         }
 
@@ -49,7 +53,9 @@ namespace Lab5
         private void SaveEditedTask_Click(object sender, RoutedEventArgs e)
         {
 
+            List<Task> tasks = jsonSerializer.ReadDataFromFile("tasks.json");
             Task editedTask = (Task)DataContext;
+            tasks.RemoveAll(x => x.Title == editedTask.Title || x.Deadline == editedTask.Deadline);
             editedTask.Title = editTitleTextBox.Text;
             editedTask.Description = editDescriptionTextBox.Text;
 
@@ -60,7 +66,8 @@ namespace Lab5
             }
             editedTask.Tags = editTagsTextBox.Text;
 
-            editedTask.Print();
+            tasks.Add(editedTask);
+            jsonSerializer.WriteDataToFile(tasks, "tasks.json");
 
             Close(); // Закрытие окна редактирования
         }

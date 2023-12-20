@@ -13,8 +13,6 @@ namespace Lab5
 {
     public partial class AddTaskWindow : Window
     {
-        private TextBox titleTextBox;
-        // private DatePicker deadlinePicker;
         private static JsonObjectSerializer<Task> jsonSerializer = new JsonObjectSerializer<Task>();
 
         public AddTaskWindow()
